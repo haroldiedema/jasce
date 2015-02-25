@@ -1,0 +1,1 @@
+node bin/jasce.js $@

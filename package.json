@@ -1,0 +1,31 @@
+{
+  "name": "jasce",
+  "version": "1.0.0",
+  "description": "JasCe - JavaScript Compiler Engine",
+  "author": "Harold Iedema",
+  "license": "MIT",
+  "main": "src/JasCe.js",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "minimist": "^1.1.0"
+  },
+  "devDependencies": {
+    "qunit": "^0.7.5"
+  },
+  "scripts": {
+    "test": "node testsuite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haroldiedema/joii.git"
+  },
+  "keywords": [
+    "joii",
+    "inheritance",
+    "oop"
+  ],
+  "bugs": {
+    "url": "https://github.com/haroldiedema/joii/issues"
+  },
+  "homepage": "http://joii.harold.info"
+}
