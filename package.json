@@ -23,9 +23,12 @@
     "url": "https://github.com/haroldiedema/jasce.git"
   },
   "keywords": [
-    "joii",
-    "inheritance",
-    "oop"
+    "javascript",
+    "compiler",
+    "build",
+    "tool",
+    "include",
+    "inline"
   ],
   "bugs": {
     "url": "https://github.com/haroldiedema/jasce/issues"
