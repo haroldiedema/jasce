@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /*                                                        __         _____
  JasCe - JavaScript Compiler Engine                   __ / /__ ____ / ___/__
  (C)2015, Harold Iedema <harold@iedema.me>           / // / _ `(_-</ /__/ -_)

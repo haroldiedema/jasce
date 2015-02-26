@@ -1,8 +1,14 @@
 # JasCe: JavaScript Compiler Engine
-
 > __This project is in early development!__
 
-JasCe (JavaScript Compiler Engine) is a JavaScript compiler that utilizes compiler-annotations, similar to the famous line `'use strict';`. The program compiles all source into one single JavaScript file which can then be minified by another program of your choice. Perhaps in the future, we'll add one of our own...
+JasCe (_JavaScript Compiler Engine_) is a JavaScript compiler that utilizes compiler-annotations, similar to the famous line `'use strict';`. The program compiles all source into one single JavaScript file which can then be minified by another program of your choice. Perhaps in the future, we'll add one of our own...
+
+### Installation
+
+```bash
+$ npm install jasce -g
+$ jasce --help
+```
 
 ### Why would I need this?
 Good question. There are several "compilers" or rather "build-tools" available already that can do the job pretty well. However, when it comes to combining multiple JavaScript files, it usually boils down to simple file concatination. That basically means that the program pastes one file after another. This creates a very big problem for large applications or libraries: scoping.
@@ -49,8 +55,8 @@ Here's how:
 
 The code inside `legacy/polyfills.js` will _only_ be included if the parameter `--with-polyfill` would be passed.
 
-```sh
-# jasce src/my_code.js --with-polyfill
+```bash
+$ jasce src/my_code.js --with-polyfill
 ```
 
 #### Multiple conditions
@@ -72,6 +78,21 @@ By default, the compiler simply prints the compiled code if no destination file 
 
 In order to save the compiled result to a file, you can use the `--output` parameter.
 
-```sh
-# jasce src/my_file.js --output=dist/app.js --with-polyfill
+```bash
+$ jasce src/my_file.js --output=dist/app.js --with-polyfill
 ```
+
+### Using JasCe as a node module
+
+You can use JasCe as a node module if you wish to do so.
+
+```javascript
+var JasCe = require("jasce");
+
+JasCe.setVerbose(true)              // Enable or disable verbose output
+     .setInput("input-file.js")     // Input (entry) file
+     .setOutput("output-file.js")   // Destination file for compiled source
+     .include("debug")              // Equivalent of '--with-debug'
+     .compile();                    // Starts compilation
+```
+

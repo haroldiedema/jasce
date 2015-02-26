@@ -5,6 +5,9 @@
   "author": "Harold Iedema",
   "license": "MIT",
   "main": "src/JasCe.js",
+  "bin": {
+      "jasce" : "./bin/jasce.js"
+  },
   "dependencies": {
     "colors": "^1.0.3",
     "minimist": "^1.1.0"
@@ -17,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/haroldiedema/joii.git"
+    "url": "https://github.com/haroldiedema/jasce.git"
   },
   "keywords": [
     "joii",
@@ -25,7 +28,7 @@
     "oop"
   ],
   "bugs": {
-    "url": "https://github.com/haroldiedema/joii/issues"
+    "url": "https://github.com/haroldiedema/jasce/issues"
   },
-  "homepage": "http://joii.harold.info"
+  "homepage": "https://github.com/haroldiedema/jasce"
 }
